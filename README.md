@@ -41,3 +41,14 @@ But, exam_name is just another column in the score table. It is not a primary ke
 This is Transitive Dependency. When a non-prime attribute depends on other non-prime attributes rather than depending upon the prime attributes or primary key.
 
 Refer from :https://www.studytonight.com/dbms/database-normalization.php 
+
+## Transaction of MySQL (MySQL 事务)
+### Transactions have four properties (ACID):
+    Atomicity − This ensures that all operations within the work unit are completed successfully; otherwise, the transaction is aborted at the point of failure and previous operations are rolled back to their former state.
+
+    Consistency − This ensures that the database properly changes states upon a successfully committed transaction.
+
+    Isolation − This enables transactions to operate independently on and transparent to each other.
+
+    Durability − This ensures that the result or effect of a committed transaction persists in case of a system failure.
+In MySQL, the transactions begin with the statement BEGIN WORK and end with either a COMMIT or a ROLLBACK statement.
